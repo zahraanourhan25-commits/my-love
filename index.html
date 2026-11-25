@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="v
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Love ❤️</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:
+    radial-gradient(ellipse at center,
+    #00c9d8 0%,
+    #07518e 40%,
+    #170b3e 75%,
+    #09051c 100%);
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+}
+
+svg {
+  width: 330px;
+  max-width: 90vw;
+  overflow: visible;
+}
+
+.heart-line {
+  fill: transparent;
+  stroke: #ff526b;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  filter: drop-shadow(0 0 5px #ff234f);
+  animation: draw 3s ease forwards;
+}
+
+.heart-fill {
+  fill: #ff1744;
+  opacity: 0;
+  filter:
+    drop-shadow(0 0 10px #ff1744)
+    drop-shadow(0 0 25px #ff1744)
+    drop-shadow(0 0 45px #ff1744);
+
+  animation:
+    fillHeart 1.5s ease 3s forwards,
+    pulse 1.2s ease-in-out 4.5s infinite,
+    glowHeart 2s ease-in-out 4.5s infinite alternate;
+}
+
+
+.leaf {
+  fill: none;
+  stroke: #ff718b;
+  stroke-width: 3.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: draw 2s ease 2s forwards;
+  filter:
+    drop-shadow(0 0 5px #ff365c)
+    drop-shadow(0 0 12px #ff1744);
+}
+
+h1 {
+  color: #ff9aaa;
+  font-family: Georgia, serif;
+  font-size: 34px;
+  letter-spacing: 5px;
+  margin-top: 20px;
+  opacity: 0;
+  text-shadow:
+    0 0 5px #ff1744,
+    0 0 15px #ff1744,
+    0 0 30px #ff1744;
+  animation: showText 1.5s ease 4.5s forwards;
+}
+
+@keyframes draw {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes fillHeart {
+  to { opacity: 1; }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+}
+
+@keyframes showText {
+  to { opacity: 1; }
+}
+
+@keyframes glowHeart {
+  from {
+    filter:
+      drop-shadow(0 0 10px #ff1744)
+      drop-shadow(0 0 20px #ff1744);
+  }
+
+  to {
+    filter:
+      drop-shadow(0 0 20px #ff6688)
+      drop-shadow(0 0 45px #ff1744)
+      drop-shadow(0 0 65px #ff1744);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<svg viewBox="0 0 300 270">
+
+  <!-- Main Heart -->
+  <path class="heart-line"
+    d="M150 220
+       C125 195 55 150 55 105
+       C55 45 125 35 150 95
+       C175 35 245 45 245 105
+       C245 150 175 195 150 220 Z" />
+
+  <path class="heart-fill"
+    d="M150 220
+       C125 195 55 150 55 105
+       C55 45 125 35 150 95
+       C175 35 245 45 245 105
+       C245 150 175 195 150 220 Z" />
+
+  <!-- Romantic glowing branches -->
+
+  <path class="leaf" pathLength="1"
+    d="M150 100 C145 80 150 55 155 35
+       C160 20 175 15 183 22"/>
+
+  <path class="leaf" pathLength="1"
+    d="M150 78 C125 65 112 48 123 34
+       C133 22 147 38 150 53"/>
+
+  <path class="leaf" pathLength="1"
+    d="M155 65 C178 55 199 43 190 28
+       C184 16 169 28 166 39"/>
+
+  <path class="leaf" pathLength="1"
+    d="M151 49 C139 33 126 39 132 51
+       C137 62 151 68 151 68
+       C151 68 171 54 171 43
+       C170 30 155 34 151 49Z"/>
+
+</svg>
+<g class="leaf">
+
+  <!-- Main romantic line -->
+  <path d="M150 100
+    C145 80 150 55 155 35
+    C160 20 175 15 183 22"/>
+
+  <!-- Left soft heart curve -->
+  <path d="M150 78
+    C125 65 112 48 123 34
+    C133 22 147 38 150 53"/>
+
+  <!-- Right soft heart curve -->
+  <path d="M155 65
+    C178 55 199 43 190 28
+    C184 16 169 28 166 39"/>
+
+  <!-- Small romantic heart -->
+  <path d="M151 49
+    C139 33 126 39 132 51
+    C137 62 151 68 151 68
+    C151 68 171 54 171 43
+    C170 30 155 34 151 49Z"/>
+
+</g>
+
+<h1>I LOVE YOU❣️ </h1>
+
+</div>
+</body>
+</html>
